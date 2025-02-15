@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@520&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{     
+padding: 0px;
+margin: 0px;
+box-sizing: border-box; 
+}
+body{
+ background-image: url(https://ohlala.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/08/inner_about_me_background.jpg);
+ overflow-x: hidden!important;
+}
+
+.intro{
+    min-height: 100vh!important;
+    width: 100%!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+.navv{
+    background-color: rgba(250, 235, 215, 0.384);
+    width: 90%;
+    height: 70px;
+    position: fixed;
+    top: 20px;
+    left: 5%;
+    z-index: 10;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+.navlef{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navlef i{
+    display: none;
+}
+.navrigh{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navrigh>a{
+    position: relative;
+    width: max-content;
+    display: inline;
+}
+.navrigh>a::after{
+    content: '';
+    background:linear-gradient(to right ,purple, #dff36d);
+    border-radius: 100px;
+    height: 5px;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 1s;
+}
+.navrigh>a:hover::after{
+    width: 100%;
+}
+.navlogo{
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.intcont{
+    position: absolute;
+    left: 50px;
+    top: 300px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400; 
+    font-style: italic; 
+  color: rgba(241, 228, 241, 0.74)!important;
+}
+.intcont h1{
+    font-size: 100px!important;
+}
+.aboutme{
+    min-height: 640px;
+    width: 100%;
+    background-color: rgba(243, 205, 243, 0.945);
+}
+.akkaimg{
+    height: 640px;
+    width: 90%;
+    animation: akka linear forwards;
+    animation-duration: 2s;
+}
+.bluetraingle{
+    width: 90%;
+    height: 640px;
+    transition: 1s;
+}
+.bluetraingle:hover{
+    scale: 1.045;
+}
+.cookbook{
+    min-height: 640px;
+    width: 100%;
+    background-color: white;
+    padding-top: 30px;
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.cookbook h1{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400; 
+    font-style: italic;
+    color: rgb(180, 74, 180); 
+}
+.cookbook b{
+    position: relative;
+    width: max-content;
+    display: inline;
+    cursor: pointer;
+}
+.cookbook b::after{
+    content: '';
+    background:linear-gradient(to right ,plum, pink);
+    border-radius: 100px;
+    height: 5px;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 1s;
+}
+.cookbook b:hover::after{
+    width: 100%;
+}
+.decor{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.decor:hover{
+    box-shadow: 0px 0px 30px purple;
+    transform: skew(1deg);
+    cursor: pointer;
+}
+.cookbook button{
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.cookbook button:hover{
+    background-color: #dff36d!important;
+}
+.visit{
+    min-height: 550px;
+    width: 100%;
+}
+.visitimg{
+    height: 500px;
+    width: 5%;
+    border-radius: 6px;   
+    animation: vist linear forwards;
+    animation-duration: 2s;
+    animation-timeline:view();
+    animation-range: entry;
+}
+@keyframes vist {
+    to{
+        width: 100%;
+    }
+}
+.visitcont h1{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400; 
+    font-style: italic;
+    color: rgb(180, 74, 180);
+}
+.visitcont p{
+    font-family: "Host Grotesk", sans-serif; 
+    font-size: 25px;
+    color:rgb(48, 45, 45);
+}
+.visitcont button{
+    background-color: rgb(228, 104, 104);
+}
+.visitcont button:hover{
+    background-color:red;
+}
+.papaimg{
+    height: 640px;
+    width: 100%;
+    position: relative;
+    left: -50px;
+}
+.papa{
+    min-height: 640px;
+    width: 100%;
+    background-color: rgba(243, 205, 243, 0.945);
+}
+.papacont h1{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400; 
+    font-style: italic;
+}
+.papacont button{
+    background-color: rgb(226, 117, 193);
+}
+.papacont button:hover{
+    background-color: rgb(214, 147, 158);
+}
+.contact{
+    width: 100%;
+    min-height: 280px;
+    background-color: bisque;
+}
+.contimg{
+    width: 5%;
+    height: 280px;
+    border-radius: 5px;
+    animation: vist linear forwards;
+    animation-duration: 2s;
+    animation-timeline:view();
+    animation-range: entry;
+}
+.navv input{
+    display: none;
+}
+.over{
+    width: 100%;
+    height: 750px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: overo;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+    opacity: 0;
+    position: absolute;
+}
+@keyframes overo {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 1;
+    }50%{
+        opacity: 1;
+    }75%{
+        opacity: 9;
+    }85%{
+        opacity: 8;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.giff{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    opacity: 0;
+    animation-name: ma;
+    animation-delay: 3.4s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+@keyframes ma {
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    50%{opacity: 0;}
+    75%{opacity: 0;}
+    90%{opacity: 9;}
+    100%{opacity: 1;}
+}
+
+
+/* MEDIA QURIES */
+
+@media only screen and (max-width:950px) {
+    .navrigh{
+        width: 65%;
+    } 
+    .papaimg{
+        left: unset;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .navrigh{
+        padding: 20px;
+        width: 25%;
+        border-radius: 20px;
+        min-height: 250px;
+        background-color: rgba(197, 175, 197, 0.459);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        right: -200px;
+        top: 75px;
+        opacity: 0;
+        transition: all 1s;
+    }
+    input:checked ~.navrigh{
+        opacity: 1;
+        right: 20px;
+    }
+    .navrigh button{
+        height: 40px!important;
+    }
+     .navv{
+        flex-direction: column;
+    }
+    .navlef{
+        width: 100%;
+    }   
+    .navlef i{
+        padding-top: 10px;
+        font-size: 40px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .intcont h1{
+        font-size:75px!important;
+    }
+    .intcont{
+        left: 25px;
+    } 
+    .navrigh{
+        width: 40%;
+    }  
+}
+
+@media only screen and (max-width:390px) {
+    .intcont h1{
+        font-size:55px!important;
+    }
+}

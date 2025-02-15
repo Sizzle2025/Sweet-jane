@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@520&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{     
+padding: 0px;
+margin: 0px;
+box-sizing: border-box; 
+}
+
+.intro{
+    height: 500px;
+    width: 100%;
+    background-image:url('https://ohlala.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/05/hero_contact.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-left: 90px;
+}
+.navv{
+    width: 90%;
+    height: 70px;
+    position: fixed;
+    top: 20px;
+    left: 5%;
+    z-index: 10;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+.navlef{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navlef i{
+    display: none;
+}
+.navrigh{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navrigh>a{
+    position: relative;
+    width: max-content;
+    display: inline;
+}
+.navrigh>a::after{
+    content: '';
+    background:linear-gradient(to right ,purple, #dff36d);
+    border-radius: 100px;
+    height: 5px;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 1s;
+}
+.navrigh>a:hover::after{
+    width: 100%;
+}
+.navlogo{
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.intcont{
+    position: relative;
+    bottom: -30px;
+}
+.intcont h1{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400; 
+    font-style: italic;
+}
+.intcont p{
+    font-family: "Host Grotesk", sans-serif;
+    margin-top: 20px;
+    color: rgb(165, 72, 72);
+}
+.git{
+    width: 100%;
+    min-height: 900px;
+    background-image: url('https://ohlala.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/08/blue_pink_background.png');
+    background-position: center;
+    background-size: cover;
+    padding: 60px;
+}
+.git h1{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400; 
+    font-style: italic;
+}
+.git input,textarea{
+    background-color: rgba(255, 255, 255, 0.452);
+    color: white!important;
+    outline: none;
+    resize: none;
+}
+.git input::placeholder,textarea::placeholder{
+    color: palevioletred;
+    font-weight: 500;
+}
+.form{
+    width: 50%;
+}
+.lolipop{
+    background-color:pink;
+    min-height: 600px;
+    width: 100%;
+}
+.lolimg{
+    height: 600px;
+    width: 600px;
+}
+.loc h1{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400; 
+    font-style: italic;
+    color: rgb(255, 86, 86);
+    margin-bottom: 25px;
+}
+.loc p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.loc button{
+    background-color: rgb(255, 86, 86);
+    padding: 10px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.loc button:hover{
+    background-color: white;
+    color: rgb(255, 86, 86);
+}
+.contact{
+    width: 100%;
+    min-height: 280px;
+    background-color: bisque;
+}
+.contimg{
+    width: 5%;
+    height: 280px;
+    border-radius: 5px;
+    animation: vist linear forwards;
+    animation-duration: 2s;
+    animation-timeline:view();
+    animation-range: entry;
+}
+@keyframes vist {
+    to{
+        width: 100%;
+    }
+}
+.navv input{
+    display: none;
+}
+.main{
+    overflow: hidden;
+}
+
+/* MEDIA QURIES */
+
+@media only screen and (max-width:1200px) {
+    .lolimg{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .form{
+        width: 70%;
+    }
+    .lolim{
+        display:flex;
+        justify-content: center;
+    }
+    .loc{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .navrigh{
+        width: 65%;
+    } 
+}
+
+@media only screen and (max-width:800px) {
+    .navrigh{
+        padding: 20px;
+        width: 25%;
+        border-radius: 20px;
+        min-height: 250px;
+        background-color: rgba(197, 175, 197, 0.459);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        right: -200px;
+        top: 75px;
+        opacity: 0;
+        transition: all 1s;
+    }
+    input:checked ~.navrigh{
+        opacity: 1;
+        right: 20px;
+    }
+    .navrigh button{
+        height: 40px!important;
+    }
+     .navv{
+        flex-direction: column;
+     }
+    .navlef{
+        width: 100%;
+    }   
+    .navlef i{
+        padding-top: 10px;
+        font-size: 40px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width:775px) {
+    .form{
+        width: 90%;
+    }
+    .git{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .form{
+        width: 100%;
+    }
+    .git{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navrigh{
+        width: 40%;
+    }
+}

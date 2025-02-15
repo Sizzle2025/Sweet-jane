@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@520&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@520&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{     
+padding: 0px;
+margin: 0px;
+box-sizing: border-box; 
+}
+.intro{
+    height: 500px;
+    width: 100%;
+    background-image:url('https://ohlala.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/05/hero_inner_05.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-left: 90px;
+}
+.navv{
+    width: 90%;
+    height: 70px;
+    position: fixed;
+    top: 20px;
+    left: 5%;
+    z-index: 10;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+.navlef{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navlef i{
+    display: none;
+}
+.navrigh{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navrigh>a{
+    position: relative;
+    width: max-content;
+    display: inline;
+}
+.navrigh>a::after{
+    content: '';
+    background:linear-gradient(to right ,purple, #dff36d);
+    border-radius: 100px;
+    height: 5px;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 1s;
+}
+.navrigh>a:hover::after{
+    width: 100%;
+}
+.navlogo{
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.intcont{
+    position: relative;
+    bottom: -30px;
+}
+.intcont h1{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400; 
+    font-style: italic;
+}
+.intcont p{
+    font-family: "Host Grotesk", sans-serif;
+    margin-top: 20px;
+}
+.navv input{
+    display: none;
+}
+.menu{
+    min-height: 700px;
+    width: 100%;
+    background-color: rgb(253, 180, 204);
+    padding-top: 50px;
+}
+.menu input{
+    outline: none;
+}
+.menu .btn{
+    background-color: rgb(235, 87, 112);
+}
+.fep{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: -30px;
+    border-radius: 50%;
+    border: 1px solid plum;
+    margin-bottom: 10px;
+}
+.fep:hover{
+    filter: grayscale();
+    cursor: pointer;
+}
+.menu b{
+    cursor: pointer;
+}
+.menu h3{
+    font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.traingle{
+    position: relative;
+    top: -70px;
+    width: 350px;
+}
+.traingle:hover{
+    transform: rotate(360deg);
+    transition: 1s all;
+}
+.star{
+    width: 70%;
+}
+.pro{
+    height: 300px;
+    width: 100%;
+    filter: brightness(90%);
+}
+.prod h6{ 
+    font-family: "Cookie", cursive;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 10px;
+    font-size: 45px;
+    cursor: pointer;
+}
+.prod b:hover{
+    color: deeppink;
+    cursor: pointer;
+}
+.pro:hover{
+    filter: brightness(110%);
+    cursor: pointer;
+    /* scale: 1.212;
+    transition-duration: 1000ms; */
+}
+.prod .btn{
+    background-color: rgb(235, 87, 112);
+    font-weight: bold;
+}
+.prod .btn:hover{
+    color: deeppink;
+    background-color: white;
+    transition: 1s all;
+}
+.contact{
+    width: 100%;
+    min-height: 280px;
+    background-color: bisque;
+}
+.contimg{
+    width: 5%;
+    height: 280px;
+    border-radius: 5px;
+    animation: vist linear forwards;
+    animation-duration: 2s;
+    animation-timeline:view();
+    animation-range: entry;
+}
+@keyframes vist {
+    to{
+        width: 100%;
+    }
+}
+
+/* MEDIA QURIES */
+
+@media only screen and (max-width:992px) {
+    .navrigh{
+        padding: 20px;
+        width: 25%;
+        border-radius: 20px;
+        min-height: 250px;
+        background-color: rgba(197, 175, 197, 0.459);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        right: -200px;
+        top: 75px;
+        opacity: 0;
+        transition: all 1s;
+    }
+    input:checked ~.navrigh{
+        opacity: 1;
+        right: 20px;
+    }
+    .navrigh button{
+        height: 40px!important;
+    }
+    .navv{
+        flex-direction: column;
+    }
+    .navlef{
+        width: 100%;
+    }   
+    .navlef i{
+        padding-top: 10px;
+        font-size: 40px;
+        display: block;
+        color: rgb(235, 87, 112);
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .traingle{
+        width: 200px;
+    }
+}

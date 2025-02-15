@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@520&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@520&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{     
+padding: 0px;
+margin: 0px;
+box-sizing: border-box; 
+}
+.intro{
+    height: 500px;
+    width: 100%;
+    background-image:url('https://ohlala.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/08/hero_checkout.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-left: 90px;
+}
+.navv{
+    width: 90%;
+    height: 70px;
+    position: fixed;
+    top: 20px;
+    left: 5%;
+    z-index: 10;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+.navlef{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navlef i{
+    display: none;
+}
+.navrigh{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navrigh>a{
+    position: relative;
+    width: max-content;
+    display: inline;
+    color: rgb(233, 69, 96)!important;
+}
+.navrigh>a::after{
+    content: '';
+    background:linear-gradient(to right ,purple, #dff36d);
+    border-radius: 100px;
+    height: 5px;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 1s;
+}
+.navrigh>a:hover::after{
+    width: 100%;
+}
+.navlogo{
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.intcont{
+    position: relative;
+    bottom: -30px;
+}
+.intcont h1{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400; 
+    font-style: italic;
+}
+.intcont p{
+    font-family: "Host Grotesk", sans-serif;
+    margin-top: 20px;
+}
+.menlef{
+    padding-left: 60px;
+    padding-right: 60px;
+    border-right: 2px solid red;
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+.menrigh{
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+.menu{
+    font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+  padding-bottom: 50px;
+  background-image: url(https://sweetjane.qodeinteractive.com/wp-content/uploads/2018/12/h1-img-4.jpg);
+  background-position: center; 
+}
+.p7{
+    height: 90px ;
+    width: 90px;
+    animation: p77 linear forwards;
+    animation-duration: 2s;
+    animation-timeline:view();
+    animation-range: entry;
+    scale: 0.1;
+}
+@keyframes p77 {
+    to{
+        scale: 1;
+    }
+}
+.p7:hover{
+    scale: 1.115;
+    transition: all 1s;
+    cursor: pointer;
+    filter: grayscale();
+}
+.menu2{
+    min-height: 600px;
+    width: 100%;
+    background-image: url(https://sweetjane.qodeinteractive.com/wp-content/uploads/2018/12/h1-img-3-2.jpg);
+    background-position: center;
+    padding: 50px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+    padding-bottom: 50px; 
+}
+.picbg{
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid plum;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+.pic1{
+    background-image: url(./shop-img-10-600x600.jpg);
+}
+.pic2{
+    background-image: url(./shop-img-11-600x600.jpg);
+}
+.pic3{
+    background-image: url(./shop-img-13-600x600.jpg);
+}
+.pic4{
+    background-image: url(./shop-img-16-600x600.jpg);
+}
+.pic5{
+    background-image: url(./shop-img-18-600x600.jpg);
+}
+.pic6{
+    background-image: url(./shop-img-21-600x600.jpg);
+}
+.pic7{
+    background-image: url(./shop-img-7-600x600.jpg);
+}
+.pic8{
+    background-image: url(./shop-standard-img-1-600x600.jpg);
+}
+.picbg:hover{
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+.picbg button{
+    opacity: 0;
+    scale: 0.1;
+}
+.picbg:hover button{
+    opacity: 1;
+    scale: 1;
+    transition: all 1s;
+}
+.contact{
+    width: 100%;
+    min-height: 280px;
+    background-color: bisque;
+}
+.contimg{
+    width: 5%;
+    height: 280px;
+    border-radius: 5px;
+    animation: vist linear forwards;
+    animation-duration: 2s;
+    animation-timeline:view();
+    animation-range: entry;
+}
+@keyframes vist {
+    to{
+        width: 100%;
+    }
+}
+.newoff{
+    width: 100%;
+    min-height: 500px;
+    background-image:url(https://ohlala.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/05/blue_pattern_fruit.jpg) ;
+}
+.newcontt{
+    min-height: 500px;
+}
+.newcont h1{
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal; 
+}
+.newcont p{
+    font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+  
+}
+.newimg{
+    width: 100%;
+    min-height: 500px;
+    background-color: rgb(255, 245, 227)!important;
+    background-image: url(./product_21.png);
+    background-position: center;
+    background-size: cover;
+    transition: 5s;
+    animation-name: newpic;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes newpic {
+    0%{
+        background-image: url(pastry-731823_640.jpg);
+    } 
+    20%{
+        background-image: url(port-8-img-8.jpg);
+    }  
+    40%{
+        background-image: url(product_11.png);
+    }  
+    60%{
+        background-image: url(Decorated\ Birthday\ Cake.webp);
+    }  
+    80%{
+        background-image: url(product_21.png);
+    } 
+    100%{
+        background-image: url(sweet-7972193_640.webp);
+    }    
+}
+.navv input{
+    display: none;
+}
+.main{
+    overflow: hidden;
+}
+
+
+/* MEDIA QURIES */
+
+@media only screen and (min-width:1200px) and (max-width:1350px) {
+    .picbg{
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width:991px) and (max-width:1200px) {
+    .picbg{
+        height: 200px;
+        width: 200px;
+    }
+    .menu2 h1{
+        font-size: 26px!important;
+       
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .menlef{
+        border-right: none;
+    }
+    .menu2 h1{
+        font-size: 56px!important;  
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .navrigh{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .navrigh{
+        padding: 20px;
+        width: 25%;
+        border-radius: 20px;
+        min-height: 250px;
+        background-color: rgba(197, 175, 197, 0.459);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        right: -200px;
+        top: 75px;
+        opacity: 0;
+        transition: all 1s;
+    }
+    input:checked ~.navrigh{
+        opacity: 1;
+        right: 20px;
+    }
+    .navrigh button{
+        height: 40px!important;
+    }
+     .navv{
+        flex-direction: column;
+    }
+    .navlef{
+        width: 100%;
+    }   
+    .navlef i{
+        padding-top: 10px;
+        font-size: 40px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .menlef,.menrigh{
+        font-size: 28px;
+        padding-left: 30px ;
+        padding-right: 30px ;
+    }
+    .p7{
+        height: 70px ;
+        width: 70px;
+    }
+    .navrigh{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .menlef,.menrigh{
+        font-size: 28px;
+        padding-left: 15px ;
+        padding-right: 15px ;
+    }
+    .p7{
+        height: 50px ;
+        width: 50px;
+    }
+}

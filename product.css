@@ -227,4 +227,25 @@ box-sizing: border-box;
     .traingle{
         width: 200px;
     }
+    .navrigh{
+        min-width:70% ;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .navrigh{
+        min-width:30% ;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .navrigh{
+        min-width:40% ;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .navrigh{
+        min-width:50% ;
+    }
 }
